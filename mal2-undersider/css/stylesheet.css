@@ -1,0 +1,92 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0;
+}
+
+  #global-header{
+
+    
+    background-image: url("https://picsum.photos/800/500?grayscale");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-color:var(--basic-grey);
+    padding: 1rem;
+    position: relative;
+    height: 50vh;
+    min-height: 200px;
+    max-height: 300px;
+    
+    nav{
+
+      background-position: top;
+        ul{
+          padding: 10px;
+          margin: 0;
+          background: white;
+          border: grey 10px;
+          border-radius: 6px;
+          box-shadow: 10px;
+        
+          li{
+              list-style: none;
+              display: inline-block;
+              padding: 1rem;
+              margin: 0;
+        }
+      }
+     }
+    }
+
+  #mainlogo{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #0c4e4ec4;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+  main{
+    padding: 1rem;
+  }
+
+  aside{
+    padding: 1rem;
+    a { color: black; text-decoration: none; }
+  }
+
+  article{
+    margin: 1rem 0;
+    border:1px solid #efefefe0;
+    max-width: 400px; 
+    width: 100%;
+    min-width: 250px;
+    padding: 1rem;
+
+    p{
+
+    }
+    }
+
+  #btn{
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    border: none;
+
+    
+}
+
+footer{
+  background-color: #646464;
+  color: #fff;
+  padding: 1rem;
+  min-height: 150px;
+  background-size: cover;
+}
