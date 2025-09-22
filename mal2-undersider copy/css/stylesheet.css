@@ -4,26 +4,31 @@ body{
 }
 
   #global-header{
-
-    
     background-image: url("https://picsum.photos/800/500?grayscale");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    background-color:var(--basic-grey);
+    background-color: var(--basic-grey);
     padding-bottom: 0.2rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-top:3rem;
-    position: relative;
+    padding-top: 3rem;
     height: 50vh;
     min-height: 200px;
     max-height: 300px;
+
+    grid-column-start: 1;
+    grid-column-end: 4;
     
     nav{
 
       background-position: top;
         ul{
+          width:100%;
+          display: flex ;
+          justify-content: 
+          space-evenly; 
+
           padding: 10px;
           margin: 0;
           background: white;
@@ -56,6 +61,17 @@ body{
 }
 
   main{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    
+    width:100%;
+    display:grid ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    justify-content: space-evenly; 
+
     padding: 1rem;
   }
 
@@ -86,6 +102,13 @@ body{
 }
 
 footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    width:100%;
+    display:flex ;
+    justify-content: space-between; 
+
   label{
     background-color: #646464;
     color: #fff;
@@ -95,3 +118,19 @@ footer{
     display: block;
   }
 }
+
+
+
+  #grid-container{
+    display: grid;
+    grid-template-areas: "header header header"
+                        "main main aside"
+                        "footer footer footer";
+    width: 100%;
+ 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    column-gap: 0;
+    row-gap: 1rem;
+  }
+
